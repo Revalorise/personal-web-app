@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="card">
+    <h5 class="card-header">StockStream -- Real-Time Stock Tracker</h5>
+    <div class="card-body">
+      <p class="card-text">StockStream empowers users to stay ahead in the fast-paced world of stock trading by providing real-time data and personalized tracking tools. Whether you’re at home or on the go, StockStream ensures that the pulse of the market is always at your fingertips.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="container marketing">
+
+    <div class="container px-4 py-5 bg-dark" id="hanging-icons">
+      <h2 class="pb-3 border-bottom text-light">Get Started...</h2>
+    <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-light">Go to your stock dashboard</h3>
+          <a href="#" class="btn btn-success">
+            View &raquo;
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-light">Add a stock to your tracking list</h3>
+          <a href="#" class="btn btn-success">
+            View &raquo;
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-light">View your stock performance</h3>
+          <a href="#" class="btn btn-success">
+            View &raquo;
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 pb-4">What is a stock market? <span class="text-body-secondary">Click "Learn More"</span></h2>
+        <p style="font-size: 18px">
+            A stock market is a public marketplace for the trading of company stock and derivatives at an agreed price. It’s a place where buyers and sellers meet to trade in securities such as stocks.
+            The price of stocks changes based on supply and demand, the company’s performance, economic conditions, and other factors that might not seem rational—like investor “sentiment”—but all of which must be considered if you’re buying or selling shares.
+        </p>
+        <p class="mt-5"><a class="btn btn-success" href="#">Learn More... &raquo;</a></p>
+      </div>
+      <div class="col-md-5">
+        <img src="{{ url_for('static', filename='images/money.jpg') }}" class="img-fluid" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1 pb-4">Gold Trading??? <span class="text-body-secondary">See for yourself.</span></h2>
+        <p style="font-size: 18px">
+            Trading gold has been a time-honored practice for centuries, prized for its intrinsic value and safe-haven appeal.
+            In today's financial markets, gold trading is more accessible than ever, thanks to various instruments such as CFDs, futures, and spot markets.
+            Whether you're a seasoned trader or a novice looking to explore this precious metal, this comprehensive guide will provide you with insights into how to trade gold effectively.
+        </p>
+        <p class="mt-5"><a class="btn btn-success" href="#">Learn More... &raquo;</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{{ url_for('static', filename='images/gold.jpg') }}" class="img-fluid" width="500" height="700">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1 pb-4">Recognizing Wallstreet  <span class="text-body-secondary">Center of the riches.</span></h2>
+        <p style="font-size: 18px">
+            Physically, Wall Street refers to a street in New York City in lower Manhattan. It is also referred to as “the Financial District” because it houses multiple financial institutions and big banks.
+
+            Additionally, the US Central Bank, the Federal Reserve, and the New York Stock Exchange (one of the largest exchanges globally) are located there.
+
+            Figuratively, however, Wall Street is used to symbolize the financial markets, investments, and publicly-traded companies, even if they aren't physically situated on the street itself. Some even argue that Wall Street has become synonymous with the US financial system.
+        </p>
+        <p class="mt-5"><a class="btn btn-success" href="#">Learn More... &raquo;</a></p>
+      </div>
+      <div class="col-md-5">
+          <img src="{{ url_for('static', filename='images/wallstreet.jpg') }}" class="img-fluid" width="500" height="500">
+      </div>
+    </div>
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+{% endblock %}

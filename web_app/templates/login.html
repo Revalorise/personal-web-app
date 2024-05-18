@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container align-items-center py-4">
+<main class="form-signin w-100 ">
+  <div class="container col-md-5 ">
+
+  <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <h1 class="h3 mb-3 fw-normal">Please Sign In</h1>
+
+    <div class="form-floating pb-3">
+      {{ form.username(type="email", class_="form-control", id="floatingInput", placeholder="Email") }}
+      {{ form.username.label(for="floatingInput") }}
+    </div>
+    <div class="form-floating">
+      {{ form.password(type="password", class_="form-control", id="floatingPassword", placeholder="Password") }}
+      {{ form.password.label(for="floatingPassword") }}
+    </div>
+
+    <div class="form-check text-start my-3">
+      {{ form.remember_me(class_="form-check-input", type="checkbox", value="remember-me", id="flexCheckDefault") }}
+      {{ form.remember_me.label(class_="form-check-label", for="flexCheckDefault") }}
+    </div>
+    {{ form.submit(class_="btn btn-primary w-100 py-2", type="submit") }}
+  </form>
+
+    </div>
+</main>
+</div>
+{% endblock %}

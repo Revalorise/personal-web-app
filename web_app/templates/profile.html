@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    User: {{ user.username }}<br>
+    Subscribed Stocks:<br>
+    {% for stock in stocks %}
+    <span class="badge bg-dark">{{ stock.name }}</span> is currently at: <span class="badge bg-success">{{ stock.price }}</span><br>
+    {% endfor %}<br>
+    {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
+    {% if user.last_seen %}<p>Last seen on: {{ user.last_seen }}</p>{% endif %}
+</div>
+{% endblock %}
